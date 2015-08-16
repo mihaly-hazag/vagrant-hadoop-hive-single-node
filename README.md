@@ -13,8 +13,15 @@ _It is tested on Virtualbox yet._
 * Virtualbox (https://www.virtualbox.org)
 * Vagrant (more information: https://www.vagrantup.com)
 
-## Running
+## Run Vagrant
 * navigate into the project directory
-* type "**vagrant up**" in terminal
+* type "**vagrant up**" in terminal (be patient, it will take several minutes)
+* type "**vagrant ssh**", you will logged into the virtual machine
 
 For stopping the Vagrant box see more here: http://docs.vagrantup.com/v2/getting-started/teardown.html
+
+## Run Hive
+* type "**hive**"
+
+## Use Haddop
+Of course you can use Hadoop as well in single node. E.g. type: "hadoop fs -ls" 
