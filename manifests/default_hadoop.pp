@@ -23,6 +23,7 @@ exec{"download_hadoop":
   command => "wget -O /home/vagrant/hadoop-2.7.1.tar.gz http://apache.cs.utah.edu/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz --no-check-certificate",
   path => $path,
   unless => "ls /home/vagrant |grep hadoop-2.7.1",
+  timeout => 1800
 } ->
 
 exec {"unpack_hadoop":
@@ -43,6 +44,7 @@ file{"/etc/profile.d/hadoop.sh":
 exec{"download_hive":
   command => "wget -O /home/vagrant/apache-hive-1.2.1-bin.tar.gz http://apache.cs.utah.edu/hive/hive-1.2.1/apache-hive-1.2.1-bin.tar.gz --no-check-certificate",
   path => $path,
+  timeout => 1800
 } ->
 
 
